@@ -1,0 +1,24 @@
+{
+  "name": "employee-tracker-application",
+  "version": "1.0.0",
+  "description": "Content Management System to view and manage departments, roles, and employees in a company",
+  "main": "server.js",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "mysql2": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcgasper/Employee-Tracker-Application.git"
+  },
+  "author": "Jacob Gasper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcgasper/Employee-Tracker-Application/issues"
+  },
+  "homepage": "https://github.com/jcgasper/Employee-Tracker-Application#readme"
+}
