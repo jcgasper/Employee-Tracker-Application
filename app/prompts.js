@@ -3,9 +3,9 @@ const inquirer = require("inquirer");
 
 const introPrompt = [
 	{
-		type: 'rawlist',
+		type: 'list',
 		message: 'What Would You Like To Do?',
-		name: 'queryInto',
+		name: 'runQuery',
 		choices: [
 			'View All Employees',
 			'Add Employee',
@@ -14,14 +14,17 @@ const introPrompt = [
             'Add Role',
             'View All Departments',
             'Add Department',
-            'View All Employees By Department',
+            'Exit',
+            /*'View All Employees By Department',
 			'View All Employees By Manager',
 			'Update Employee Manager',
 			'Remove Employee',
 			'Remove Role',
 			'Remove Department',
 			'View Total Utalized Budget Of A Department',
-			'Exit',
+			,*/
 		],
 	},
 ];
+
+module.exports = introPrompt;
