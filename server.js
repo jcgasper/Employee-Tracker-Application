@@ -51,6 +51,7 @@ function startApp() {
 
          else if (runQuery == "Add Department") {
              console.log("add department test");
+             addDepartment();
          }
 
          else {
@@ -326,6 +327,26 @@ function viewDepartments() {
 	});
 }
 
+function addDepartment() {
+    inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "department",
+        message: "Input name of new department."
+      },
+    ])
+    
+    .then(function (answer) {
+		var query = "INSERT INTO department (name) VALUES ( ? )";
+		connection.query(query, answer.department, function (err, res) {
+			if (err) throw err;
+			console.table(res);
+		});
+		
+		startApp();
+	});
+}
 
 
 function exit() {
